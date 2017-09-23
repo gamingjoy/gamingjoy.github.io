@@ -69,18 +69,20 @@
 
 
 
-<meta name="description" content="简单记录Markdown的使用方法 1、标题 # ## 这是引用">
+<meta name="description" content="标题Markdown中采用#来表示标题，#的个数代表不同级别标题，后面追加空格，如： # 一级标题 ## 二级标题 ###### 六级标题">
 <meta name="keywords" content="Markdow">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Markdown学习笔记">
 <meta property="og:url" content="http://yoursite.com/2017/09/22/Markdown学习笔记/index.html">
 <meta property="og:site_name" content="长江札记">
-<meta property="og:description" content="简单记录Markdown的使用方法 1、标题 # ## 这是引用">
+<meta property="og:description" content="标题Markdown中采用#来表示标题，#的个数代表不同级别标题，后面追加空格，如： # 一级标题 ## 二级标题 ###### 六级标题">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-09-22T04:10:00.515Z">
+<meta property="og:image" content="http://imglf.nosdn.127.net/img/aGltNVUxZE5mUE8xM3dsVVAzUWRYeGd4WFZKM0lyZjNDbG5pcnRUL3J5YTBIVXd0eFNuamx3PT0.jpg?=imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2">
+<meta property="og:updated_time" content="2017-09-23T04:39:16.026Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Markdown学习笔记">
-<meta name="twitter:description" content="简单记录Markdown的使用方法 1、标题 # ## 这是引用">
+<meta name="twitter:description" content="标题Markdown中采用#来表示标题，#的个数代表不同级别标题，后面追加空格，如： # 一级标题 ## 二级标题 ###### 六级标题">
+<meta name="twitter:image" content="http://imglf.nosdn.127.net/img/aGltNVUxZE5mUE8xM3dsVVAzUWRYeGd4WFZKM0lyZjNDbG5pcnRUL3J5YTBIVXd0eFNuamx3PT0.jpg?=imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2">
 
 
 
@@ -332,12 +334,29 @@
       
 
       
-        <p>简单记录Markdown的使用方法</p>
-<h4 id="1、标题"><a href="#1、标题" class="headerlink" title="1、标题"></a>1、标题</h4><blockquote>
-<p>#</p>
-<p>##</p>
-<p>这是引用</p>
+        <hr>
+<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p>Markdown中采用<code>#</code>来表示标题，<code>#</code>的个数代表不同级别标题，后面追加空格，如：</p>
+<p><code># 一级标题</code></p>
+<p><code>## 二级标题</code></p>
+<p><code>###### 六级标题</code><br><a id="more"></a></p>
+<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p>引用一段文本，在前面加上<code>&gt;</code>即可，如：</p>
+<blockquote>
+<p>这是一段引用示例</p>
 </blockquote>
+<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p>代码使用两个<code>`代码块` </code>来表示，如：<br><code>a = b + c</code></p>
+<p>插入高亮代码，在格式是`` <figure class="highlight plain"><figcaption><span>``` ``表示，如Python风格代码：</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">```Python</div><div class="line">import tensorflow as tf</div><div class="line">x = tf.placeholder(tf.float32, [None, 784])</div><div class="line">W = tf.Variable(tf.zeros([784, 10]))</div></pre></td></tr></table></figure></p>
+<h4 id="编号"><a href="#编号" class="headerlink" title="编号"></a>编号</h4><p>无序列表采用<code>*</code> 表示，如：</p>
+<ul>
+<li>示例一</li>
+<li>示例二</li>
+<li>示例三</li>
+</ul>
+<p>有序列表直接用<code>1.</code> 表示，如：</p>
+<ol>
+<li>示例四</li>
+<li>示例五<h4 id="链接与图片"><a href="#链接与图片" class="headerlink" title="链接与图片"></a>链接与图片</h4>链接采用<code>[name](link)</code> 表示，如我的Github链接：<br><a href="github.com/gamingjoy">Github</a></li>
+</ol>
+<p>图片采用<code>![name](link)</code> 表示，如：<br><img src="http://imglf.nosdn.127.net/img/aGltNVUxZE5mUE8xM3dsVVAzUWRYeGd4WFZKM0lyZjNDbG5pcnRUL3J5YTBIVXd0eFNuamx3PT0.jpg?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2" alt="pic"></p>
 
       
     </div>
@@ -513,7 +532,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#1、标题"><span class="nav-number">1.</span> <span class="nav-text">1、标题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#标题"><span class="nav-number">1.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#引用"><span class="nav-number">2.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编号"><span class="nav-number">4.</span> <span class="nav-text">编号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#链接与图片"><span class="nav-number">5.</span> <span class="nav-text">链接与图片</span></a></li></ol></div>
             
 
           </div>
@@ -546,11 +565,11 @@
 </div>
 
 
-  <div class="powered-by">Erstellt mit  <a class="theme-link" href="https://hexo.io">Hexo</a></div>
+  
 
   <span class="post-meta-divider">|</span>
 
-  <div class="theme-info">Theme &mdash; <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">NexT.Pisces</a> v5.1.2</div>
+  
 
 
         
