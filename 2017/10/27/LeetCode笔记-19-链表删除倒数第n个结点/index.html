@@ -53,7 +53,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Markdow," />
+  <meta name="keywords" content="Linked List," />
 
 
 
@@ -69,20 +69,18 @@
 
 
 
-<meta name="description" content="标题Markdown中采用#来表示标题，#的个数代表不同级别标题，后面追加空格，如： # 一级标题 ## 二级标题 ###### 六级标题">
-<meta name="keywords" content="Markdow">
+<meta name="description" content="问题Remove Nth Node From End of List 删除链表中倒数第n个元素，n始终合法，要求一次遍历 解决思路1、最初想法使用快慢指针（quick、slow），初始话时均指向第一个结点，然后快指针比满指针领先n个位置。 当快指针指向尾结点时(quick-&amp;gt;next == NULL)，slow-&amp;gt;next即是待删除结点。代码如下：">
+<meta name="keywords" content="Linked List">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Markdown学习笔记">
-<meta property="og:url" content="http://yoursite.com/2017/09/22/Markdown学习笔记/index.html">
+<meta property="og:title" content="LeetCode笔记-19-链表删除倒数第n个结点">
+<meta property="og:url" content="http://yoursite.com/2017/10/27/LeetCode笔记-19-链表删除倒数第n个结点/index.html">
 <meta property="og:site_name" content="长江札记">
-<meta property="og:description" content="标题Markdown中采用#来表示标题，#的个数代表不同级别标题，后面追加空格，如： # 一级标题 ## 二级标题 ###### 六级标题">
+<meta property="og:description" content="问题Remove Nth Node From End of List 删除链表中倒数第n个元素，n始终合法，要求一次遍历 解决思路1、最初想法使用快慢指针（quick、slow），初始话时均指向第一个结点，然后快指针比满指针领先n个位置。 当快指针指向尾结点时(quick-&amp;gt;next == NULL)，slow-&amp;gt;next即是待删除结点。代码如下：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://imglf.nosdn.127.net/img/aGltNVUxZE5mUE8xM3dsVVAzUWRYeGd4WFZKM0lyZjNDbG5pcnRUL3J5YTBIVXd0eFNuamx3PT0.jpg?=imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2">
-<meta property="og:updated_time" content="2017-09-23T04:39:16.026Z">
+<meta property="og:updated_time" content="2017-10-27T04:31:42.717Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Markdown学习笔记">
-<meta name="twitter:description" content="标题Markdown中采用#来表示标题，#的个数代表不同级别标题，后面追加空格，如： # 一级标题 ## 二级标题 ###### 六级标题">
-<meta name="twitter:image" content="http://imglf.nosdn.127.net/img/aGltNVUxZE5mUE8xM3dsVVAzUWRYeGd4WFZKM0lyZjNDbG5pcnRUL3J5YTBIVXd0eFNuamx3PT0.jpg?=imageView&thumbnail=500x0&quality=96&stripmeta=0&type=jpg%7Cwatermark&type=2">
+<meta name="twitter:title" content="LeetCode笔记-19-链表删除倒数第n个结点">
+<meta name="twitter:description" content="问题Remove Nth Node From End of List 删除链表中倒数第n个元素，n始终合法，要求一次遍历 解决思路1、最初想法使用快慢指针（quick、slow），初始话时均指向第一个结点，然后快指针比满指针领先n个位置。 当快指针指向尾结点时(quick-&amp;gt;next == NULL)，slow-&amp;gt;next即是待删除结点。代码如下：">
 
 
 
@@ -112,13 +110,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2017/09/22/Markdown学习笔记/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/10/27/LeetCode笔记-19-链表删除倒数第n个结点/"/>
 
 
 
 
 
-  <title>Markdown学习笔记 | 长江札记</title>
+  <title>LeetCode笔记-19-链表删除倒数第n个结点 | 长江札记</title>
   
 
 
@@ -245,7 +243,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/09/22/Markdown学习笔记/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2017/10/27/LeetCode笔记-19-链表删除倒数第n个结点/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Changjiang Yu">
@@ -262,7 +260,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Markdown学习笔记</h1>
+          <h1 class="post-title" itemprop="name headline">LeetCode笔记-19-链表删除倒数第n个结点</h1>
         
 
         <div class="post-meta">
@@ -274,8 +272,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-22T12:06:00+08:00">
-                2017-09-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-27T12:08:00+08:00">
+                2017-10-27
               </time>
             
 
@@ -297,8 +295,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/其他教程/" itemprop="url" rel="index">
-                    <span itemprop="name">其他教程</span>
+                  <a href="/categories/LeetCode-链表/" itemprop="url" rel="index">
+                    <span itemprop="name">LeetCode-链表</span>
                   </a>
                 </span>
 
@@ -334,30 +332,20 @@
       
 
       
-        <hr>
-<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p>Markdown中采用<code>#</code>来表示标题，<code>#</code>的个数代表不同级别标题，后面追加空格，如：</p>
-<p><code># 一级标题</code></p>
-<p><code>## 二级标题</code></p>
-<p><code>###### 六级标题</code><br><a id="more"></a></p>
-<h4 id="引用"><a href="#引用" class="headerlink" title="引用"></a>引用</h4><p>引用一段文本，在前面加上<code>&gt;</code>即可，如：</p>
-<blockquote>
-<p>这是一段引用示例</p>
-</blockquote>
-<h4 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h4><p>代码使用两个<code>`代码块` </code>来表示，如：<br><code>a = b + c</code></p>
-<p>插入高亮代码，在格式是`` <figure class="highlight plain"><figcaption><span>``` ``表示，如Python风格代码：</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">```Python</div><div class="line">import tensorflow as tf</div><div class="line">x = tf.placeholder(tf.float32, [None, 784])</div><div class="line">W = tf.Variable(tf.zeros([784, 10]))</div></pre></td></tr></table></figure></p>
-<h4 id="编号"><a href="#编号" class="headerlink" title="编号"></a>编号</h4><p>无序列表采用<code>*</code> 表示，如：</p>
+        <h4 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h4><p><a href="https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/" target="_blank" rel="external">Remove Nth Node From End of List</a></p>
+<p>删除链表中倒数第n个元素，n始终合法，要求一次遍历</p>
+<h4 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h4><h5 id="1、最初想法"><a href="#1、最初想法" class="headerlink" title="1、最初想法"></a>1、最初想法</h5><p>使用快慢指针（quick、slow），初始话时均指向第一个结点，然后快指针比满指针领先n个位置。</p>
+<p>当快指针指向尾结点时(quick-&gt;next == NULL)，slow-&gt;next即是待删除结点。代码如下：<br><a id="more"></a><br><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div></pre></td><td class="code"><pre><div class="line"><span class="comment">/**</span></div><div class="line"><span class="comment"> * Definition for singly-linked list.</span></div><div class="line"><span class="comment"> * struct ListNode &#123;</span></div><div class="line"><span class="comment"> *     int val;</span></div><div class="line"><span class="comment"> *     ListNode *next;</span></div><div class="line"><span class="comment"> *     ListNode(int x) : val(x), next(NULL) &#123;&#125;</span></div><div class="line"><span class="comment"> * &#125;;</span></div><div class="line"><span class="comment"> */</span></div><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function">ListNode* <span class="title">removeNthFromEnd</span><span class="params">(ListNode* head, <span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line">        ListNode *slow = head,*quick =head;</div><div class="line">        ListNode *newhead = <span class="keyword">new</span> ListNode(<span class="number">-1</span>);</div><div class="line">        newhead-&gt;next = slow;</div><div class="line"></div><div class="line">        <span class="keyword">if</span>(!head-&gt;next) </div><div class="line">            <span class="keyword">return</span> <span class="literal">NULL</span>;</div><div class="line">        </div><div class="line">        <span class="keyword">while</span>(n)&#123;</div><div class="line">            quick = quick-&gt;next;  </div><div class="line">            <span class="keyword">if</span>(!quick-&gt;next &amp;&amp; n !=<span class="number">1</span>)&#123;</div><div class="line">                <span class="keyword">return</span> newhead-&gt;next-&gt;next;</div><div class="line">            &#125;</div><div class="line">            n--;  </div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        <span class="keyword">while</span>(quick-&gt;next)&#123;</div><div class="line">            quick = quick-&gt;next;</div><div class="line">            slow = slow-&gt;next;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        </div><div class="line">        <span class="keyword">if</span>(n == <span class="number">1</span>)</div><div class="line">            slow-&gt;next = quick-&gt;next;</div><div class="line">        <span class="keyword">else</span></div><div class="line">            slow-&gt;next = slow-&gt;next-&gt;next;      </div><div class="line">        <span class="keyword">return</span> newhead-&gt;next;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure></p>
+<p>提交时，针对不同的情况，修改了几种判断情况：</p>
 <ul>
-<li>示例一</li>
-<li>示例二</li>
-<li>示例三</li>
+<li>[1],1：head指向NULL</li>
+<li>[1,2],2：n=链表长度，删除链表第一个结点，慢指针无需移动，跳过慢指针。</li>
+<li>[1,2],1：n=1，删除链表最后一个元素，slow-&gt;next = quick-&gt;next(NULL)</li>
+<li>[1,2,3,4,5],3：删除链表中间结点，slow-&gt;next = slow-&gt;next-&gt;next;</li>
 </ul>
-<p>有序列表直接用<code>1.</code> 表示，如：</p>
-<ol>
-<li>示例四</li>
-<li>示例五<h4 id="链接与图片"><a href="#链接与图片" class="headerlink" title="链接与图片"></a>链接与图片</h4>链接采用<code>[name](link)</code> 表示，如我的Github链接：<br><a href="github.com/gamingjoy">Github</a></li>
-</ol>
-<p>图片采用<code>![name](link)</code> 表示，如：<br><img src="http://imglf.nosdn.127.net/img/aGltNVUxZE5mUE8xM3dsVVAzUWRYeGd4WFZKM0lyZjNDbG5pcnRUL3J5YTBIVXd0eFNuamx3PT0.jpg?=imageView&amp;thumbnail=500x0&amp;quality=96&amp;stripmeta=0&amp;type=jpg%7Cwatermark&amp;type=2" alt="pic"></p>
-
+<p>可以看出，这样思路正确，但是代码不简洁，判断容易出错，需要理清各种情况。</p>
+<h5 id="2、简洁思路"><a href="#2、简洁思路" class="headerlink" title="2、简洁思路"></a>2、简洁思路</h5><p>将quick、slow指针都指向标记结点newhead，newhead指向第一个结点。quick比slow领先n+1个位置。这样当quick是NULL时，slow-&gt;next即需要跳过。该思路整合了上述所有情况。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div></pre></td><td class="code"><pre><div class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></div><div class="line"><span class="keyword">public</span>:</div><div class="line">    <span class="function">ListNode* <span class="title">removeNthFromEnd</span><span class="params">(ListNode* head, <span class="keyword">int</span> n)</span> </span>&#123;</div><div class="line"></div><div class="line">        ListNode *newhead = <span class="keyword">new</span> ListNode(<span class="number">-1</span>);</div><div class="line">        newhead-&gt;next = head;</div><div class="line">        ListNode *slow = newhead,*quick =newhead;</div><div class="line">        <span class="keyword">for</span>(<span class="keyword">int</span> i=<span class="number">1</span>;i&lt;=n+<span class="number">1</span>;i++)&#123;</div><div class="line">            quick = quick-&gt;next;</div><div class="line">        &#125;</div><div class="line">        </div><div class="line">        <span class="keyword">while</span>(quick != <span class="literal">NULL</span>)&#123;</div><div class="line">            quick = quick-&gt;next;</div><div class="line">            slow = slow-&gt;next;</div><div class="line">        &#125;</div><div class="line">        slow-&gt;next = slow-&gt;next-&gt;next;</div><div class="line">        <span class="keyword">return</span> newhead-&gt;next;</div><div class="line">    &#125;</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
       
     </div>
     
@@ -374,7 +362,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/Markdow/" rel="tag"><i class="fa fa-tag"></i> Markdow</a>
+            <a href="/tags/Linked-List/" rel="tag"><i class="fa fa-tag"></i> Linked List</a>
           
         </div>
       
@@ -387,8 +375,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/09/22/机器学习算法总结（一）/" rel="next" title="机器学习算法笔记（一）">
-                <i class="fa fa-chevron-left"></i> 机器学习算法笔记（一）
+              <a href="/2017/10/22/LeetCode笔记-21-合并两个有序链表/" rel="next" title="LeetCode笔记-21-合并两个有序链表">
+                <i class="fa fa-chevron-left"></i> LeetCode笔记-21-合并两个有序链表
               </a>
             
           </div>
@@ -396,10 +384,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/10/22/LeetCode笔记-21-合并两个有序链表/" rel="prev" title="LeetCode笔记-21-合并两个有序链表">
-                LeetCode笔记-21-合并两个有序链表 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -536,7 +520,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#标题"><span class="nav-number">1.</span> <span class="nav-text">标题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#引用"><span class="nav-number">2.</span> <span class="nav-text">引用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码"><span class="nav-number">3.</span> <span class="nav-text">代码</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#编号"><span class="nav-number">4.</span> <span class="nav-text">编号</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#链接与图片"><span class="nav-number">5.</span> <span class="nav-text">链接与图片</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#问题"><span class="nav-number">1.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#解决思路"><span class="nav-number">2.</span> <span class="nav-text">解决思路</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#1、最初想法"><span class="nav-number">2.1.</span> <span class="nav-text">1、最初想法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2、简洁思路"><span class="nav-number">2.2.</span> <span class="nav-text">2、简洁思路</span></a></li></ol></li></ol></div>
             
 
           </div>
